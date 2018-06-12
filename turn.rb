@@ -20,7 +20,6 @@ class Turn
   def play
     puts "-----NEW TURN-----"
     puts "#{@current_user.name} : #{@question.create}"
-    puts @question.answer
     @answer = gets.chomp.to_i
   end
 

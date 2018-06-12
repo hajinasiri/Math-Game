@@ -1,15 +1,16 @@
 require './player.rb'
 require './question'
 
-player1 = player::Player.new('player1')
-player2 = player::Player.new('player2')
+player1 = @player::Player.new('player1')
+player2 = @player::Player.new('player2')
 
 
 
-question1 = question::Question.new
+question1 = @question::Question.new
 
 
 for i in 1..6 do
+  puts "-----NEW TURN-----"
   if i%2 == 0
     current_user = player2
   else
@@ -25,6 +26,6 @@ for i in 1..6 do
   else
     puts "That's wrong"
   end
-  puts "player1 #{player1.score}/3 vs player2 #{player2.score}/3", "", "-----NEW TURN-----"
+  puts "player1 #{player1.score}/3 vs player2 #{player2.score}/3", ""
 end
 puts "-----GAME OVER-----","GOOD BYE"

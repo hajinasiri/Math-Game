@@ -11,7 +11,6 @@ for i in 1..6 do
   turn.set_current_user
   turn.play
   turn.check
-  turn.result
 end
-
+turn.result
 puts "-----GAME OVER-----","GOOD BYE"
